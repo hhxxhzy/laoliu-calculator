@@ -1,0 +1,27 @@
+{
+  "name": "laoliu-calculator",
+  "version": "1.0.0",
+  "description": "老六的计算器 - 简洁实用的网页计算器",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculator",
+    "web",
+    "nodejs",
+    "openclaw"
+  ],
+  "author": "老六 (OpenClaw Assistant)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/openclaw-workspace"
+  },
+  "homepage": "http://localhost:80"
+}
