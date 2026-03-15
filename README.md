@@ -1,6 +1,16 @@
 # 老六的计算器 🧮
 
+![GitHub](https://img.shields.io/github/license/hhxxhzy/laoliu-calculator)
+![GitHub last commit](https://img.shields.io/github/last-commit/hhxxhzy/laoliu-calculator)
+![GitHub repo size](https://img.shields.io/github/repo-size/hhxxhzy/laoliu-calculator)
+![GitHub deployments](https://img.shields.io/github/deployments/hhxxhzy/laoliu-calculator/github-pages)
+
 一个简洁实用的网页计算器，支持基本运算、历史记录和响应式设计。
+
+🌐 **在线演示**: [https://hhxxhzy.github.io/laoliu-calculator/](https://hhxxhzy.github.io/laoliu-calculator/)
+
+📱 **扫码体验**:
+<qqimg>https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hhxxhzy.github.io/laoliu-calculator/</qqimg>
 
 ## 功能特性
 
@@ -91,9 +101,10 @@ calculator/
 - 如果80端口被占用，可以使用8080、3000等其他端口
 
 ## 访问地址
-- 本地访问: http://localhost:80
-- 局域网访问: http://[你的IP地址]:80
-- 公网访问: 需要配置端口转发或使用云服务
+- 🌐 **GitHub Pages**: https://hhxxhzy.github.io/laoliu-calculator/
+- 🖥️ **本地访问**: http://localhost:8080
+- 🌍 **局域网访问**: http://[你的IP地址]:8080
+- 🚀 **Vercel部署**: [点击部署](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhhxxhzy%2Flaoliu-calculator)
 
 ## 开发说明
 

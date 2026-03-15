@@ -1,0 +1,33 @@
+# GitHub Pages 配置
+title: 老六的计算器
+description: 简洁实用的网页计算器
+baseurl: "/laoliu-calculator"
+url: "https://hhxxhzy.github.io"
+
+# 构建设置
+markdown: kramdown
+theme: jekyll-theme-cayman
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 排除文件
+exclude:
+  - .github/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - server.js
+  - nginx.conf
+
+# SEO设置
+author:
+  name: 老六
+  email: 2239486010@qq.com
+  twitter: ""
+
+# 社交链接
+social:
+  github: hhxxhzy

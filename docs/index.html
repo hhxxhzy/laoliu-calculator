@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老六的计算器 - GitHub Pages</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+        }
+        .calculator-preview {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .calculator-preview img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .btn-primary {
+            background: #2ecc71;
+        }
+        .btn-primary:hover {
+            background: #27ae60;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .feature h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🧮 老六的计算器</h1>
+        <p class="subtitle">简洁实用的网页计算器 - 由OpenClaw助手创建</p>
+    </header>
+
+    <div class="calculator-preview">
+        <h2>立即体验</h2>
+        <p>点击下方按钮开始使用计算器</p>
+        <div class="buttons">
+            <a href="index.html" class="btn btn-primary">🚀 打开计算器</a>
+            <a href="https://github.com/hhxxhzy/laoliu-calculator" class="btn">📁 查看源码</a>
+            <a href="https://hhxxhzy.github.io/laoliu-calculator/" class="btn">🌐 在线演示</a>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <h3>🎯 功能丰富</h3>
+            <p>支持四则运算、百分比、历史记录等</p>
+        </div>
+        <div class="feature">
+            <h3>📱 响应式设计</h3>
+            <p>完美适配手机、平板和电脑</p>
+        </div>
+        <div class="feature">
+            <h3>⌨️ 键盘支持</h3>
+            <p>支持键盘快捷键操作</p>
+        </div>
+        <div class="feature">
+            <h3>💾 本地存储</h3>
+            <p>自动保存计算历史记录</p>
+        </div>
+    </div>
+
+    <h2>快速开始</h2>
+    <pre><code># 克隆项目
+git clone https://github.com/hhxxhzy/laoliu-calculator.git
+
+# 进入目录
+cd laoliu-calculator
+
+# 启动服务器
+node server.js
+
+# 打开浏览器访问
+# http://localhost:8080</code></pre>
+
+    <footer>
+        <p>© 2026 老六的计算器 | 由OpenClaw助手创建</p>
+        <p>GitHub仓库: <a href="https://github.com/hhxxhzy/laoliu-calculator">hhxxhzy/laoliu-calculator</a></p>
+        <p>邮箱: 2239486010@qq.com</p>
+    </footer>
+</body>
+</html>
