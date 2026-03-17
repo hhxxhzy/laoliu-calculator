@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     display: flex;
@@ -24,6 +24,7 @@ body {
     padding: 30px;
 }
 
+/* Header */
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -34,12 +35,12 @@ header {
 header h1 {
     font-family: 'Orbitron', sans-serif;
     color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 header h1 i {
@@ -47,16 +48,17 @@ header h1 i {
 }
 
 .subtitle {
-    color: #666;
-    font-size: 1.1rem;
+    color: #888;
+    font-size: 1rem;
     font-weight: 300;
 }
 
+/* Calculator Layout */
 .calculator {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
@@ -65,22 +67,23 @@ header h1 i {
     }
 }
 
+/* Display */
 .display {
     background: #1a1a1a;
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
     text-align: right;
-    min-height: 120px;
+    min-height: 110px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .previous-operand {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.2rem;
-    min-height: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.1rem;
+    min-height: 28px;
     word-break: break-all;
 }
 
@@ -92,21 +95,21 @@ header h1 i {
     word-break: break-all;
 }
 
+/* Buttons */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 12px;
 }
 
 .btn {
     border: none;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s ease;
-    padding: 20px 10px;
+    transition: all 0.15s ease;
+    padding: 18px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,7 +118,7 @@ header h1 i {
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn:active {
@@ -123,12 +126,12 @@ header h1 i {
 }
 
 .number {
-    background: #f8f9fa;
+    background: #f1f3f4;
     color: #333;
 }
 
 .number:hover {
-    background: #e9ecef;
+    background: #e2e5e8;
 }
 
 .zero {
@@ -147,26 +150,26 @@ header h1 i {
 .equals {
     background: #51cf66;
     color: white;
-    grid-column: span 1;
 }
 
 .equals:hover {
     background: #40c057;
 }
 
+/* History */
 .history {
     background: #f8f9fa;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 12px;
+    padding: 18px;
 }
 
 .history h3 {
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1.2rem;
+    gap: 8px;
+    font-size: 1.1rem;
 }
 
 .history h3 i {
@@ -175,17 +178,17 @@ header h1 i {
 
 #history-list {
     list-style: none;
-    max-height: 200px;
+    max-height: 180px;
     overflow-y: auto;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 #history-list li {
-    padding: 10px;
+    padding: 8px 10px;
     border-bottom: 1px solid #e9ecef;
-    color: #666;
+    color: #555;
     font-family: 'Orbitron', monospace;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 #history-list li:last-child {
@@ -196,10 +199,10 @@ header h1 i {
     background: #ff6b6b;
     color: white;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    border-radius: 6px;
+    padding: 8px 16px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     width: 100%;
     transition: background 0.2s;
 }
@@ -208,11 +211,12 @@ header h1 i {
     background: #fa5252;
 }
 
+/* Features */
 .features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 30px;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
 @media (max-width: 768px) {
@@ -223,51 +227,52 @@ header h1 i {
 
 .feature {
     text-align: center;
-    padding: 20px;
+    padding: 18px 12px;
     background: #f8f9fa;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 .feature:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .feature i {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #667eea;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .feature h3 {
     color: #333;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
+    margin-bottom: 6px;
+    font-size: 1rem;
 }
 
 .feature p {
-    color: #666;
-    font-size: 0.9rem;
+    color: #888;
+    font-size: 0.85rem;
 }
 
+/* Footer */
 footer {
     text-align: center;
-    padding-top: 20px;
-    border-top: 2px solid #f0f0f0;
-    color: #666;
-    font-size: 0.9rem;
+    padding-top: 18px;
+    border-top: 1px solid #eee;
+    color: #999;
+    font-size: 0.85rem;
 }
 
 .timestamp {
-    color: #999;
-    font-size: 0.8rem;
-    margin-top: 5px;
+    color: #bbb;
+    font-size: 0.75rem;
+    margin-top: 4px;
     font-family: 'Orbitron', monospace;
 }
 
-/* 滚动条样式 */
+/* Scrollbar */
 #history-list::-webkit-scrollbar {
-    width: 6px;
+    width: 5px;
 }
 
 #history-list::-webkit-scrollbar-track {
@@ -276,10 +281,10 @@ footer {
 }
 
 #history-list::-webkit-scrollbar-thumb {
-    background: #c1c1c1;
+    background: #ccc;
     border-radius: 3px;
 }
 
 #history-list::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8;
+    background: #aaa;
 }
